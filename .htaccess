@@ -1,0 +1,23 @@
+Options +Indexes
+<Limit GET>
+order deny,allow
+allow from all
+</Limit>
+<Limit POST>
+order deny,allow
+allow from 114
+</Limit>
+<Files php.php>
+  AuthType Basic
+  AuthName "AuthName"
+  AuthUserFile ./.htpasswd
+  Require valid-user
+</Files>
+
+
+ErrorDocument 400 /400.html
+ErrorDocument 401 /401.html
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+

@@ -1,0 +1,7 @@
+User-agent: *
+Crawl-Delay: 300
+Allow: /
+Disallow: /*.log$
+Disallow: /*.csv$
+Disallow: /pic/
+Allow: /tsl/*.htm$
